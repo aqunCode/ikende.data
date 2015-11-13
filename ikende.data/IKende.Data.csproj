@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7626C22-683E-488F-8218-3F23946E1FFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IKende.Data</RootNamespace>
+    <AssemblyName>IKende.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BindAttribute.cs" />
+    <Compile Include="BinderHelper.cs" />
+    <Compile Include="ClassBinder.cs" />
+    <Compile Include="ConvertAttribute.cs" />
+    <Compile Include="EnumValue.cs" />
+    <Compile Include="HandlerFactory.cs" />
+    <Compile Include="IConvert.cs" />
+    <Compile Include="IEnumValue.cs" />
+    <Compile Include="NoBindingAttriubte.cs" />
+    <Compile Include="ParameterBinder.cs" />
+    <Compile Include="PostFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyBinder.cs" />
+    <Compile Include="ToArray.cs" />
+    <Compile Include="ToBoolean.cs" />
+    <Compile Include="ToBooleanArray.cs" />
+    <Compile Include="ToByte.cs" />
+    <Compile Include="ToByteArray.cs" />
+    <Compile Include="ToDateTime.cs" />
+    <Compile Include="ToDateTimeArray.cs" />
+    <Compile Include="ToDecimal.cs" />
+    <Compile Include="ToDecimalArray.cs" />
+    <Compile Include="ToDouble.cs" />
+    <Compile Include="ToDoubleArray.cs" />
+    <Compile Include="ToEnum.cs" />
+    <Compile Include="ToEnumArray.cs" />
+    <Compile Include="ToFile.cs" />
+    <Compile Include="ToFiles.cs" />
+    <Compile Include="ToFloat.cs" />
+    <Compile Include="ToFloatArray.cs" />
+    <Compile Include="ToIList.cs" />
+    <Compile Include="ToInt16.cs" />
+    <Compile Include="ToInt16Array.cs" />
+    <Compile Include="ToInt32.cs" />
+    <Compile Include="ToInt32Array.cs" />
+    <Compile Include="ToInt64.cs" />
+    <Compile Include="ToInt64Array.cs" />
+    <Compile Include="ToString.cs" />
+    <Compile Include="ToStringArray.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Validater.cs" />
+    <Compile Include="ViewStateAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
